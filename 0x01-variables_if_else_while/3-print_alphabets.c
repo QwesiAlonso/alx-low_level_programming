@@ -6,21 +6,21 @@
 
 int main(void)
 {
-	char m;
+	int m = 97;
 
-	char n;
+	int  n = 65;
 
-	m = 'a';
-	n = 'A';
 	while
-		(m <= 'z') {
+		(m <= 122)
+		{
 			putchar(m);
-			m + = 1;
+			m++;
 		}
 	while
-		(n <= 'z') {
+		(n <= 90)
+		{
 			putchar(n);
-			n + = 1;
+			n++;
 		}
 	putchar('\n');
 	return (0);
