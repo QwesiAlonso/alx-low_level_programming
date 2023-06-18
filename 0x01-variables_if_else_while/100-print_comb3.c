@@ -23,12 +23,12 @@ int main(void)
 					{
 						putchar('\n');
 						}
-						else
+					else
 						{
 						putchar(',');
 						putchar(' ');
 					}
-				}	
+				}
 			}
 			n++;
 		}
