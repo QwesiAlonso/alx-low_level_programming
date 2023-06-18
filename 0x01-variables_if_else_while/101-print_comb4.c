@@ -6,34 +6,25 @@
  */
 int main(void)
 {
-	int l = '0';
-	int m = '0';
-	int n = '0';
+	int l;
+	int m;
+	int n;
 
-	while (l <= '7')
+	for (l = 0; l < 8; l++)
 	{
-		while (m <= '8')
+		for (m = l + 1; m < 9; m++)
 		{
-			while (n <= '9')
+			for (n = m + 1; n < 10; n++)
 			{
-				if (l < m && m < n)
-				{
-					putchar(l);
-					putchar(m);
-					putchar(n);
-					if (!(l == '7' && m == '8' && n == '9'))
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
-				n++;
+				putchar((l % 10) + '0');
+				putchar((m % 10) + '0');
+				putchar((n % 10) + '0');
+				if (l == '7' && m == '8' && n == '9')
+				continue;
+				putchar(',');
+				putchar(' ');
 			}
-			n = '0';
-			m++;
 		}
-		m = 'o';
-		l++;
 	}
 	putchar('\n');
 	return (0);
