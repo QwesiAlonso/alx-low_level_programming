@@ -19,10 +19,10 @@ int main(void)
 				putchar((l % 10) + '0');
 				putchar((m % 10) + '0');
 				putchar((n % 10) + '0');
-				if (l == '7' && m == '8' && n == '9')
-				continue;
-				putchar(',');
-				putchar(' ');
+				if (l == 7 && m == 8 && n == 9)
+					continue;
+					putchar(',');
+					putchar(' ');
 			}
 		}
 	}
