@@ -1,30 +1,39 @@
 #include <stdio.h>
+
 /**
  * main - Entry point
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int a, b, c;
+	int l;
+	int m;
+	int n;
 
-	for (a = '0'; a < 9; a++)
+	while (l <= '7')
 	{
-		for (b = a + 1; b <= '9'; b++)
+		while (m <= '8')
 		{
-			for (c = b + 1; c <= '9'; c++)
+			while (n <= '9')
 			{
-				if ((b != a) != c)
+				if (l < m && m < n)
 				{
-					putchar(a);
-					putchar(b);
-					putchar(c);
-					if (a == '7' && b == '8')
-						continue;
-					putchar(',');
-					putchar(' ');
+					putchar(l);
+					putchar(m);
+					putchar(n);
+					if (!(l == '7' && m == '8' && n == '9'))
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
+				n++;
 			}
+			n = '0';
+			m++;
 		}
+		m = 'o';
+		l++;
 	}
 	putchar('\n');
 	return (0);
