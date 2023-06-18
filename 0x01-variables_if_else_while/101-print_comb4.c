@@ -6,9 +6,9 @@
  */
 int main(void)
 {
-	int l;
-	int m;
-	int n;
+	int l = '0';
+	int m = '0';
+	int n = '0';
 
 	while (l <= '7')
 	{
