@@ -7,7 +7,6 @@
  * password for the program 101-crackme.
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	int pass[100];
@@ -26,6 +25,7 @@ int main(void)
 		{
 			n = 2772 - sum - '0';
 			sum += n;
+			putchar(n = '0');
 			break;
 		}
 	}
